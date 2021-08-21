@@ -1,0 +1,221 @@
+{
+  "language": "Java",
+  "dictionary": [
+        { "ASTM" : "getImports",
+		  "AST" : ["imports"]
+        },
+		{ "ASTM" : "getgPackage",
+		  "AST" : ["getPackage"]
+		},
+		{ "ASTM" : "getOpensScope",
+		  "AST" : ["types"]  
+        },
+		{ "ASTM" : "getDeclOrDefn",
+		  "AST" : ["types", "declaration"]
+		},
+		{ "ASTM" : "isStatic" ,
+		  "AST" : ["isStatic"]
+		},
+		{ "ASTM" : "getIdentifierName",
+		  "AST" : ["getName", "getIdentifier", "getQualifier", "getExpression"]
+		},
+		{ "ASTM" : "getTypeName",
+		  "AST" : ["getName","getPrimitiveTypeCode", "getIdentifier"]
+		},
+		{ "ASTM" : "getDerivesFrom",
+		  "AST" : ["getSuperclassType"]
+		},
+		{ "ASTM" : "getDirectClassDerived",
+		  "AST" : ["getName"]
+		},
+		{ "ASTM" : "getAggregateType",
+		  "AST" : ["openScope_list"]
+		},
+		{ "ASTM" : "getImplementesTo",
+		  "AST" : ["superInterfaceTypes"]
+		},
+		{ "ASTM" : "getDirectImplements",
+		  "AST" : ["getName"]
+		},
+		{ "ASTM" : "isInterface",
+		  "AST" : ["isInterface"]
+		},
+		{ "ASTM" : "getModifiers",
+		  "AST" : ["modifiers"]
+		},
+		{ "ASTM" : "getModifier",
+		  "AST" : ["getKeyword"]
+		},
+		{ "ASTM" : "getNameString",
+		  "AST" : ["getName", "getIdentifier", "getPrimitiveTypeCode"]
+		},
+		{ "ASTM" : "getMembers",
+		  "AST" : ["bodyDeclarations"]
+		},
+		{ "ASTM" : "getMember",
+		  "AST" : ["member_body"]
+		},
+		{ "ASTM" : "getFragments",
+		  "AST" : ["fragments"]
+		},
+		{ "ASTM" : "getDefinitionType",
+		  "AST" : ["getType", "definitionType"]
+		},
+		{ "ASTM" : "getInitialValue",
+		  "AST" : ["getInitializer"]
+		},
+		{ "ASTM" : "getRightOperand",
+		  "AST" : ["getRightOperand", "getRightHandSide"]
+		},
+		{ "ASTM" : "getLeftOperand",
+		  "AST" : ["getLeftOperand", "getLeftHandSide"]
+		},
+		{ "ASTM" : "getOperator",
+		  "AST" : ["getOperator"]
+		},
+		{ "ASTM" : "getExpressionList",
+		  "AST" : ["expressions"]
+		},
+		{ "ASTM" : "getActualParams",
+		  "AST" : ["arguments"]
+		},
+		{ "ASTM" : "getNewType",
+		  "AST" : ["getType"]
+		},
+		{ "ASTM" : "getNameSpace",
+		  "AST" : ["getName"]
+		},
+		{ "ASTM" : "getQualifiers",
+		  "AST" : ["getQualifier"]
+		},
+		{ "ASTM" : "getName",
+		  "AST" : ["true", "getName"]
+		},
+		{ "ASTM" : "getValue",
+		  "AST" : ["getToken", "getEscapedValue", "booleanValue", "getIdentifier", "getExpression"]
+		},
+		{ "ASTM" : "getAmountDimension",
+		  "AST" : ["getDimensions"]
+		},
+		{ "ASTM" : "getBaseType",
+		  "AST" : ["getPrimitiveTypeCode", "getName", "getComponentType"]
+		},
+		{ "ASTM" : "getType",
+		  "AST" : ["getType", "getExpression"]
+		},
+		{ "ASTM" : "getArguments",
+		  "AST" : ["typeArguments", "arguments"]
+		},
+		{ "ASTM" : "getSimbol",
+		  "AST" : ["true"]
+		},
+		{ "ASTM" : "getEscapedValue",
+		  "AST" : ["true"]
+		},
+		{ "ASTM" : "getDimension",
+		  "AST" : ["dimensions"]
+		},
+		{ "ASTM" : "getParameters",
+		  "AST" : ["typeParameters"]
+		},
+		{ "ASTM" : "getIdentifier",
+		  "AST" : ["getName"]
+		},
+		{ "ASTM" : "getCastType",
+		  "AST" : ["getType"]
+		},
+		{ "ASTM" : "getExpression",
+		  "AST" : ["getExpression"]
+		},
+		{ "ASTM" : "getBody",
+		  "AST" : ["getBody"]
+		},
+		{ "ASTM" : "getSubStatements",
+		  "AST" : ["statements"]
+		},
+		{ "ASTM" : "getReturnValue",
+		  "AST" : ["getExpression"]
+		},
+		{ "ASTM" : "getReturnType",
+		  "AST" : ["getReturnType2"]
+		},
+		{ "ASTM" : "getFormalParameters",
+		  "AST" : ["parameters"]
+		},
+		{ "ASTM" : "getCondition",
+		  "AST" : ["getExpression"]
+		},
+		{ "ASTM" : "getThenBody",
+		  "AST" : ["getThenStatement"]
+		},
+		{ "ASTM" : "getElseBody",
+		  "AST" : ["getElseStatement"]
+		},
+		{ "ASTM" : "getSimbolo",
+		  "AST" : ["true"]
+		},
+		{ "ASTM" : "getOperand",
+		  "AST" : ["getOperand"]
+		},
+		{ "ASTM" : "getIndex",
+		  "AST" : ["getIndex"]
+		},
+		{ "ASTM" : "getArrayName",
+		  "AST" : ["getArray"]
+		},
+		{ "ASTM" : "getFunctionName",
+		  "AST" : ["getName"]
+		},
+		{ "ASTM" : "getCalledFunction",
+		  "AST" : ["getExpression"]
+		},
+		{ "ASTM" : "getQualifiers",
+		  "AST" : ["getName"]
+		},
+		{ "ASTM" : "getOnTrueOperand",
+		  "AST" : ["getThenExpression"]
+		},
+		{ "ASTM" : "getOnFalseOperand",
+		  "AST" : ["getElseExpression"]
+		},
+		{ "ASTM" : "getInitBody",
+		  "AST" : ["initializers"]
+		},
+		{ "ASTM" : "getIterationBody",
+		  "AST" : ["updaters"]
+		},
+		{ "ASTM" : "getParameter",
+		  "AST" : ["getParameter"]
+		},
+		{ "ASTM" : "getCatchBlocks",
+		  "AST" : ["catchClauses"]
+		},
+		{ "ASTM" : "getFinalStatement",
+		  "AST" : ["getFinally"]
+		},
+		{ "ASTM" : "getException",
+		  "AST" : ["getException", "thrownExceptions", "getExpression"]
+		},
+		{ "ASTM" : "getSwitchExpression",
+		  "AST" : ["getExpression"]
+		},
+		{ "ASTM" : "getCases",
+		  "AST" : ["getException", "statements"]
+		},
+		{ "ASTM" : "getLabelName",
+		  "AST" : ["getLabelName"]
+		},
+		{ "ASTM" : "getExtendOperands",
+		  "AST" : ["extendedOperands"]
+		},
+		{ "ASTM" : "getEnumLiterals",
+		  "AST" : ["enumConstants"]
+		},
+		{ "ASTM" : "getImplementsTo",
+		  "AST" : ["getName"]
+		},
+		{ "ASTM" : "getTarget",
+		  "AST" : ["true"]
+		}
+   ]
+}

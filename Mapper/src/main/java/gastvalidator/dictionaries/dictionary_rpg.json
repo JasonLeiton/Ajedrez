@@ -1,0 +1,32 @@
+{
+  "language": "RPG",
+  "dictionary": [
+        { "ASTM" : "getThenBody",
+		  "AST" : ["getBody"]
+        },
+		{ "ASTM" : "getSubStatements",
+		  "AST" : ["getStatements"]
+        },
+		{ "ASTM" : "getElseBody",
+		  "AST" : ["getElseBody"]
+        },
+		{ "ASTM" : "getCondition",
+		  "AST" : ["getCondition"]
+        },
+		{ "ASTM" : "getLeftOperand",
+		  "AST" : ["getResult", "getLeftOperand"]
+        },
+		{ "ASTM" : "getRightOperand",
+		  "AST" : ["getExpresion", "getRightOperand"]
+        },
+		{ "ASTM" : "getOperator",
+		  "AST" : ["getCondition"]
+        },
+		{ "ASTM" : "getSwitchExpression",
+		  "AST" : ["getOtherBody"]
+        },
+		{ "ASTM" : "getCases",
+		  "AST" : ["getWhenOptions"]
+        }
+   ]
+}

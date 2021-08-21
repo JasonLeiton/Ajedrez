@@ -1,0 +1,156 @@
+//This uses object comparisons, no like the java validator that uses a dictionary for method comparisons and casts
+{
+  "language": "CSharp",
+  "dictionary": [
+        { "ASTM" : "PublicModifier",
+		  "AST" : ["public"]
+        },
+        { "ASTM" : "PrivateModifier",
+		  "AST" : ["private"]
+		},
+		{ "ASTM" : "ProtectedModifier",
+		  "AST" : ["protected"]
+		},
+		{ "ASTM" : "AbstractModifier",
+		  "AST" : ["abstract"]
+		},
+		{ "ASTM" : "StaticModifier",
+		  "AST" : ["static"]
+		},
+		{ "ASTM" : "FinalModifier",
+		  "AST" : ["readonly"]
+		},
+		{ "ASTM" : "NativeModifier",
+		  "AST" : ["extern"]
+		},
+		{ "ASTM" : "VolatileModifier",
+		  "AST" : ["volatile"]
+		},
+		{ "ASTM" : "DefaultModifier",
+		  "AST" : ["internal"]
+		},
+		{ "ASTM" : "StrictfpModifier",
+		  "AST" : ["strictfp"]
+		},
+		{ "ASTM" : "ClassType",
+		  "AST" : ["class"]  
+        },
+		{ "ASTM" : "EnumType",
+		  "AST" : ["enum"]
+		},
+		{ "ASTM" : "ImportDeclaration" ,
+		  "AST" : ["using"]
+		},
+		{"ASTM" : "Equal" ,
+		  "AST" : ["=="]
+		},
+		{"ASTM" : "NotEqual" ,
+		  "AST" : ["!="]
+		},
+		{"ASTM" : "BitAnd" ,
+		  "AST" : ["&"]
+		},
+		{"ASTM" : "Less" ,
+		  "AST" : ["<"]
+		},
+		{"ASTM" : "Greater" ,
+		  "AST" : [">"]
+		},
+		{"ASTM" : "BitLeftShift" ,
+		  "AST" : ["<<"]
+		},
+		{"ASTM" : "BitUnsignedRightShift" ,
+		  "AST" : [">>"]
+		},
+		{"ASTM" : "Multiply" ,
+		  "AST" : ["*"]
+		},
+		{"ASTM" : "Modulus" ,
+		  "AST" : ["%"]
+		},
+		{"ASTM" : "Divide" ,
+		  "AST" : ["/"]
+		},
+		{"ASTM" : "Add" ,
+		  "AST" : ["+"]
+		},
+		{"ASTM" : "Subtract" ,
+		  "AST" : ["-"]
+		},
+		{"ASTM" : "BitAnd" ,
+		  "AST" : ["&"]
+		},
+		{"ASTM" : "BitOr" ,
+		  "AST" : ["|"]
+		},
+		{"ASTM" : "BitXor" ,
+		  "AST" : ["^"]
+		},
+		{"ASTM" : "AssignMultiply" ,
+		  "AST" : ["*="]
+		},
+		{"ASTM" : "AssignDivide" ,
+		  "AST" : ["/="]
+		},
+		{"ASTM" : "AssignModulus" ,
+		  "AST" : ["%="]
+		},
+		{"ASTM" : "AssignAdd" ,
+		  "AST" : ["+="]
+		},
+		{"ASTM" : "AssignSubtract" ,
+		  "AST" : ["-="]
+		},
+		{"ASTM" : "AssignBitLeftShift" ,
+		  "AST" : ["<<="]
+		},
+		{"ASTM" : "AssignBitUnsignedRightShift" ,
+		  "AST" : [">>="]
+		},
+		{"ASTM" : "assignBitAnd" ,
+		  "AST" : ["&="]
+		},
+		{"ASTM" : "AssignBitXor" ,
+		  "AST" : ["^="]
+		},
+		{"ASTM" : "AssignBitOr" ,
+		  "AST" : ["|="]
+		},
+		{"ASTM" : "InstanceOfExpression" ,
+		  "AST" : ["is"]
+		},
+		{"ASTM" : "Not" ,
+		  "AST" : ["!"]
+		},
+		{"ASTM" : "NullLiteral" ,
+		  "AST" : ["null"]
+		},
+		{"ASTM" : "UnaryPlus" ,
+		  "AST" : ["+"]
+		},
+		{"ASTM" : "UnaryMinus" ,
+		  "AST" : ["-"]
+		}
+		,
+		{"ASTM" : "PostIncrement" ,
+		  "AST" : ["++"]
+		}
+		,
+		{"ASTM" : "PostDecrement" ,
+		  "AST" : ["--"]
+		},
+		{"ASTM" : "Increment" ,
+		  "AST" : ["++"]
+		}
+		,
+		{"ASTM" : "Decrement" ,
+		  "AST" : ["--"]
+		},
+		{"ASTM" : "Assign" ,
+		  "AST" : ["="]
+		},
+		{"ASTM" : "SuperInvocation" ,
+		  "AST" : ["base"]
+		}
+   ]
+}

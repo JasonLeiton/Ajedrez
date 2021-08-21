@@ -1,0 +1,9 @@
+package gastvalidator.RPG2GASTMCertifier.Expressions;
+
+public enum ExpressionType {
+	LOGICAL_EXPRESSION,
+	FUNCTION_CALL_EXPRESSION,
+	ARITMETICAL_EXPRESSION,
+	NODE_EXPRESSION,
+	PARENTHESIZED_EXPRESSION
+}
