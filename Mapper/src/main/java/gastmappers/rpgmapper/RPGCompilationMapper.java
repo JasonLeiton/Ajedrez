@@ -247,7 +247,6 @@ public interface RPGCompilationMapper {
 			newStatement = newExpressionStatement;*/
 			// newStatement.setTag("AddDurStatement");
 		} else if (statement instanceof AddStatement) {
-			System.out.println("Entro Add");
 			AddStatement variable = (AddStatement) statement;
 			variable.isRoundUp();
 			BinaryExpression conditionalResult = new BinaryExpression();

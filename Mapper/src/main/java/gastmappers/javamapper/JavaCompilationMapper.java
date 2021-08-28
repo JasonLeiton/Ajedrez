@@ -251,9 +251,11 @@ public interface JavaCompilationMapper {
                 AggregateTypeDefinition aggregateTypeDefinition = TypeDeclarationtoClassType((TypeDeclaration) tipo);
                 ClassType classType = (ClassType)aggregateTypeDefinition.getAggregateType();
                 ITypeBinding typeBinding = tipo.resolveBinding();
-                classType.setPackageName(bindClassPackage(typeBinding, typeBinding.getPackage().getName()));
+                if(typeBinding != null) {
+                    classType.setPackageName(bindClassPackage(typeBinding, typeBinding.getPackage().getName()));
 
-                aggregateTypeDefinition.setLocationInfo(createSourceLocation(tipo));
+                    aggregateTypeDefinition.setLocationInfo(createSourceLocation(tipo));
+                }
                 return aggregateTypeDefinition;
             }
             return TypeDeclarationtoClassType((TypeDeclaration) tipo);
@@ -300,12 +302,14 @@ public interface JavaCompilationMapper {
                 try {
                     typeDeclaration = (SimpleType) objeto.superInterfaceTypes().get(itf);
                     ITypeBinding interfaceBinding = typeDeclaration.resolveBinding();
-                    String interfaceName = interfaceBinding.getName();
-                    String packageName = bindClassPackage(interfaceBinding, interfaceBinding.getPackage().toString().replace("package ", ""));
-                    String signature = packageName.concat(".").concat(interfaceName);
-                    anInterface.setInterfaceName(interfaceName);
-                    anInterface.setPackageName(packageName);
-                    anInterface.setSignature(signature);
+                    if(interfaceBinding != null) {
+                        String interfaceName = interfaceBinding.getName();
+                        String packageName = bindClassPackage(interfaceBinding, interfaceBinding.getPackage().toString().replace("package ", ""));
+                        String signature = packageName.concat(".").concat(interfaceName);
+                        anInterface.setInterfaceName(interfaceName);
+                        anInterface.setPackageName(packageName);
+                        anInterface.setSignature(signature);
+                    }
                 }
                 catch (ClassCastException ex) {
                     boolean stopHere = true;
@@ -1122,30 +1126,31 @@ public interface JavaCompilationMapper {
                         parameters = parameters.concat(",");
                 }
                 IMethodBinding methodBinding = method.resolveBinding();
-                ITypeBinding declaringClass = methodBinding.getDeclaringClass();
-                String packageName = bindClassPackage(declaringClass, declaringClass.getPackage().toString().replace("package ", ""));
-                String signature = packageName
-                        .concat(".")
-                        .concat(declaringClass.getName())
-                        .concat(".")
-                        .concat(method.getName().getIdentifier())
-                        .concat("(").concat(parameters).concat(")");
-                String methodName = method.getName().getIdentifier().concat("(").concat(parameters).concat(")");
-                //System.out.println(signature);
+                if(methodBinding != null) {
+                    ITypeBinding declaringClass = methodBinding.getDeclaringClass();
+                    String packageName = bindClassPackage(declaringClass, declaringClass.getPackage().toString().replace("package ", ""));
+                    String signature = packageName
+                            .concat(".")
+                            .concat(declaringClass.getName())
+                            .concat(".")
+                            .concat(method.getName().getIdentifier())
+                            .concat("(").concat(parameters).concat(")");
+                    String methodName = method.getName().getIdentifier().concat("(").concat(parameters).concat(")");
+                    //System.out.println(signature);
 
-                mappedMethod.setClassName(declaringClass.getName());
-                mappedMethod.setPackageName(packageName);
-                mappedMethod.setSignature(signature);
-                mappedMethod.setMethodName(methodName);
+                    mappedMethod.setClassName(declaringClass.getName());
+                    mappedMethod.setPackageName(packageName);
+                    mappedMethod.setSignature(signature);
+                    mappedMethod.setMethodName(methodName);
 
-                newMethod = methodToMethod(method.getName(), method.getBody(), method.modifiers(), method.parameters(),
-                        method.getReturnType2(), methodName, signature, declaringClass.getName(), packageName, metrics);
-                // JNS: upgrading to JLS14
-                //newMethod.setException(ListTypeReferencetoListType(method.thrownExceptionTypes()));
-                newMethod.setException(expressionListToExpressionList(method.thrownExceptions()));
-                newMethod.setTag("method");
-                newElement = newMethod;
-
+                    newMethod = methodToMethod(method.getName(), method.getBody(), method.modifiers(), method.parameters(),
+                            method.getReturnType2(), methodName, signature, declaringClass.getName(), packageName, metrics);
+                    // JNS: upgrading to JLS14
+                    //newMethod.setException(ListTypeReferencetoListType(method.thrownExceptionTypes()));
+                    newMethod.setException(expressionListToExpressionList(method.thrownExceptions()));
+                    newMethod.setTag("method");
+                    newElement = newMethod;
+                }
                 mappedMethod.setClassName(null);
                 mappedMethod.setPackageName(null);
                 mappedMethod.setSignature(null);

@@ -77,7 +77,7 @@ public class Verifier {
     }
 
     public String getAnalysis(boolean showAll){
-        System.out.println("Size: " + list.size());
+        //System.out.println("Size: " + list.size());
         String analysis = "";
         for (Map.Entry<Object, NodeVerifier> node : list.entrySet()) {
             if(!node.getValue().checked){

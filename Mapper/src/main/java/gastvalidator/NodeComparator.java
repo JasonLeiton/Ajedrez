@@ -218,7 +218,7 @@ public class NodeComparator {
 									if (sizeNodeMetalanguage != sizeNodeMetalanguageCopy) {
 										break;
 									} else if (sizeNodeLanguage != sizeNodeMetalanguage) {
-										System.out.println("Listas de distinto tamaño en archivo " + this.filePath);
+										//System.out.println("Listas de distinto tamaño en archivo " + this.filePath);
 										break;
 									}
 									// Analisis de cada elemento de la lista que sera un nodo, por lo que se llama
@@ -676,7 +676,6 @@ public class NodeComparator {
 		}
 
 		DifferenceLog differenceLog = null;
-		System.out.println("GAST: " + nameNodeMetaLanguage + " AST: " + nameNodeLanguage);
 		// Se crea un objeto para almacenar la información de la diferencia.
 		if (!nameNodeMetaLanguage.contentEquals(nameNodeLanguage)) {
 			long idNodeMetalanguage = getNodeID(parentNodeMetalanguage);

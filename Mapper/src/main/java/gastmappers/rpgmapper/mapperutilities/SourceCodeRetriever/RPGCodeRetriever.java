@@ -36,9 +36,7 @@ public class RPGCodeRetriever {
 		String file = loadFileByPath(path);
 		List<String> errors = new LinkedList<String>();
 		RpgParser parseTree = initialiseParser(file, errors);
-		for (String err : errors) {
-			System.out.println(err);
-		}
+
 		return parseTree.r();
 	}
 

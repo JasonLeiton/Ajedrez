@@ -53,6 +53,13 @@
             <version>1.3.2</version>
         </dependency>
 
+        <!-- ANTLR4 -->
+        <!-- https://mvnrepository.com/artifact/org.antlr/antlr4-runtime -->
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4-runtime</artifactId>
+            <version>4.8</version>
+        </dependency>
 
         <dependency>
             <groupId>com.github.rpgleparser</groupId>
@@ -74,14 +81,6 @@
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-jdk8</artifactId>
             <version>${org.mapstruct.version}</version>
-        </dependency>
-
-        <!-- ANTLR4 -->
-        <!-- https://mvnrepository.com/artifact/org.antlr/antlr4-runtime -->
-        <dependency>
-            <groupId>org.antlr</groupId>
-            <artifactId>antlr4-runtime</artifactId>
-            <version>4.8</version>
         </dependency>
 
         <!-- GAST -->

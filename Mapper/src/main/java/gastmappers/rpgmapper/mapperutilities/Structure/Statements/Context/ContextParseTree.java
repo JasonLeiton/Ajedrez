@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.antlr.v4.runtime.Parser;
+import org.antlr.v4.runtime.RuleContext;
 import org.antlr.v4.runtime.misc.Interval;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
@@ -51,6 +52,11 @@ public class ContextParseTree implements ParseTree {
 	public ParseTree getChild(int arg0) {
 
 		return listElements.get(arg0);
+	}
+
+	@Override
+	public void setParent(RuleContext parent) {
+
 	}
 
 	@Override
