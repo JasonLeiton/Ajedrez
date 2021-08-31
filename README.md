@@ -9,9 +9,9 @@ Se utilizará IntelliJ IDEA 2020.2 (Community Edition)
 ## Instalación
 
 1. Descargar el [proyecto](https://github.com/JasonLeiton/Ajedrez/tree/proyecto-tesis).
-2. Se encontrarán los proyectos: CodeRetriever, GAST y Mapper.
+2. Se encontrarán los proyectos: GAST y Mapper.
 3. Cargar los tres proyectos en IntelliJ.
-4. En el menú de Maven instalar el proyecto en el siguiente orden: GAST, CodeRetriever y Mapper. En caso de no tener menú de Maven, se activa mediante **View | Tool Windows | Maven** desde el menú principal.
+4. En el menú de Maven instalar el proyecto en el siguiente orden: GAST y Mapper. En caso de no tener menú de Maven, se activa mediante **View | Tool Windows | Maven** desde el menú principal.
 
 ## Uso
 
